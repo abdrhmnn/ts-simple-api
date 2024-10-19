@@ -1,0 +1,35 @@
+{
+  "name": "create-ts-simple-api-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.ts",
+    "build": "npx tsc"
+  },
+  "keywords": [
+    "typescript",
+    "belajar",
+    "api",
+    "supabase"
+  ],
+  "type": "module",
+  "author": "abdu",
+  "license": "ISC",
+  "description": "belajar membuat rest api sederhana dengan ts dan supabase",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.7",
+    "nodemon": "^3.1.7",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.5",
+    "express": "^4.21.1"
+  },
+  "nodemonConfig": {
+    "ext": "ts,json",
+    "exec": "tsx index.ts"
+  }
+}
